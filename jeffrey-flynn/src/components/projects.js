@@ -6,6 +6,7 @@ const Container = glamorous.div({
   background: "linear-gradient(#1F1F1F, #2D2D2D)",
   height: `${window.innerHeight}`,
   width: `${window.innerWidth - window.scrollWidth}`,
+  border: "1px solid skyblue"
 });
 
 class Projects extends Component {
