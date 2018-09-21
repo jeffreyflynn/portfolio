@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tweenjs/tween.js": "^17.2.0",
+    "css3d": "^1.0.0",
+    "glamor": "^2.20.40",
+    "glamorous": "^4.13.1",
+    "gsap": "^2.0.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-google-maps": "^9.4.5",
+    "react-icons": "^2.2.7",
+    "react-scripts": "1.1.4",
+    "three": "^0.94.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
