@@ -3,7 +3,7 @@ import glamorous from 'glamorous';
 
 
 const Container = glamorous.div({
-  border: "1px solid skyblue",
+  // border: "1px solid skyblue",
   background: "linear-gradient(black, #1F1F1F)",
   height: `${window.innerHeight}`,
   width: `${window.innerWidth - window.scrollWidth}`,
