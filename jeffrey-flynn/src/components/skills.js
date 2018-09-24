@@ -52,7 +52,40 @@ const SkillCard = glamorous.div({
   // border: "1px solid skyblue",
   borderRadius: "5px",
   background: "linear-gradient(#1F1F1F, black)",
-  boxShadow: "0 0 5px 1px #ebebeb"
+  boxShadow: "0 0 5px 1px #ebebeb",
+  display: "grid",
+  grid: "15% 80% / 100%",
+  gridGap: "2% 0"
+});
+
+const CardTitle = glamorous.div({
+  width: "100%",
+  height: "100%",
+  color: "#73C2FB",
+  fontFamily: "Syncopate, sans-serif",
+  fontWeight: 800,
+  fontSize: "2.5em",
+  textAlign: "center",
+  borderBottom: "1px solid #73C2FB",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: "1% 0"
+});
+
+const CardList = glamorous.div({
+  width: "100%",
+  height: "100%",
+  // border: "1px solid red",
+});
+
+const Item = glamorous.div({
+  width: "100%",
+  color: "white",
+  fontFamily: "Open Sans, sans-serif",
+  fontSize: "1.5em",
+  lineHeight: "1.8",
+  textAlign: "center",
 });
 
 class Skills extends Component {
@@ -68,9 +101,30 @@ class Skills extends Component {
             The culmination of this desire for knowledge and mastery is listed below.
           </Content>
           <CardContainer>
-            <SkillCard></SkillCard>
-            <SkillCard></SkillCard>
-            <SkillCard></SkillCard>
+            <SkillCard>
+              <CardTitle>Front End</CardTitle>
+              <CardList>
+                <Item>React</Item>
+                <Item>Redux</Item>
+                <Item>Context API</Item>
+                <Item>CSS3</Item>
+                <Item>Glamorous</Item>
+                <Item>Styled Components</Item>
+                <Item>AJAX -- Axios</Item>
+                <Item>LESS</Item>
+                <Item>Media Queries</Item>
+                <Item>WebGL -- Three.js</Item>
+                {/* <Item></Item> */}
+              </CardList>
+            </SkillCard>
+
+            <SkillCard>
+              <CardTitle>Back End</CardTitle>
+            </SkillCard>
+
+            <SkillCard>
+              <CardTitle>Industry Knowledge</CardTitle>
+            </SkillCard>
           </CardContainer>
       </Container>
     )
