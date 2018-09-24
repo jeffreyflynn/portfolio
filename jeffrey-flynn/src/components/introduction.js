@@ -15,7 +15,7 @@ class Introduction extends Component {
       <div ref={element => this.threeRootElement = element} id="container" style={Container}>
         <Title>Jeffrey Flynn</Title>
         <SubTitle>
-          Fullstack Developer
+          Software Engineer
             <IoIosInfinite style={{ paddingRight: "0.1%", margin: "0 7px", color: "#92BCDB" }} />
           Creative Thinker 
             <IoIosInfinite style={{ paddingRight: "0.1%", margin: "0 7px", color: "#92BCDB" }} />
