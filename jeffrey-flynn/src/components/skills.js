@@ -126,6 +126,7 @@ class Skills extends Component {
                 <Item>Mongoose</Item>
                 <Item>Passport</Item>
                 <Item>Express</Item>
+                <Item>Firestore</Item>
                 <Item>Algolia</Item>
                 <Item>Django</Item>
                 <Item>mLab</Item>
@@ -147,6 +148,7 @@ class Skills extends Component {
                 <Item>Heroku</Item>
                 <Item>Netlify</Item>
                 <Item>Firebase</Item>
+                <Item>JavaScript, Python, C, Go</Item>
               </CardList>
             </SkillCard>
           </CardContainer>
