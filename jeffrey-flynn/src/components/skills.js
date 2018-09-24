@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-import glamorous from 'glamorous';
+import React, { Component } from "react";
+import glamorous from "glamorous";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 
 
 const Container = glamorous.div({
@@ -86,7 +88,7 @@ const Item = glamorous.div({
   fontFamily: "Open Sans, sans-serif",
   fontSize: "1.5em",
   lineHeight: "1.8",
-  textAlign: "center",
+  // textAlign: "center",
 });
 
 class Skills extends Component {
@@ -105,50 +107,50 @@ class Skills extends Component {
             <SkillCard>
               <CardTitle>Front End</CardTitle>
               <CardList>
-                <Item>React</Item>
-                <Item>Redux</Item>
-                <Item>Context API</Item>
-                <Item>CSS3</Item>
-                <Item>Glamorous</Item>
-                <Item>Styled Components</Item>
-                <Item>AJAX -- Axios</Item>
-                <Item>LESS</Item>
-                <Item>Media Queries</Item>
-                <Item>WebGL -- Three.js</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />React</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Redux</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Context API</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />CSS3</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Glamorous</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Styled Components</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />AJAX -- Axios</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />LESS</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Media Queries</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />WebGL -- Three.js</Item>
               </CardList>
             </SkillCard>
 
             <SkillCard>
               <CardTitle>Back End</CardTitle>
               <CardList>
-                <Item>Node</Item>
-                <Item>Mongo</Item>
-                <Item>Mongoose</Item>
-                <Item>Passport</Item>
-                <Item>Express</Item>
-                <Item>Firestore</Item>
-                <Item>Algolia</Item>
-                <Item>Django</Item>
-                <Item>mLab</Item>
-                <Item>0Auth</Item>
-                <Item>JWT</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Node</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Mongo</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Mongoose</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Passport</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Express</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Firestore</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Algolia</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Django</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />mLab</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />0Auth</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />JWT</Item>
               </CardList>
             </SkillCard>
 
             <SkillCard>
               <CardTitle>Industry Knowledge</CardTitle>
               <CardList>
-                <Item>Git</Item>
-                <Item>RESTful API</Item>
-                <Item>HTTP</Item>
-                <Item>Big-O</Item>
-                <Item>Data Structures</Item>
-                <Item>Unit Testing</Item>
-                <Item>Computer Architecture</Item>
-                <Item>Heroku</Item>
-                <Item>Netlify</Item>
-                <Item>Firebase</Item>
-                <Item>JavaScript, Python, C, Go</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Git</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />RESTful API</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />HTTP</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Big-O</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Data Structures</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Unit Testing</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Computer Architecture</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Heroku</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Netlify</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Firebase</Item>
+                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />JavaScript, Python, C, Go</Item>
               </CardList>
             </SkillCard>
           </CardContainer>
