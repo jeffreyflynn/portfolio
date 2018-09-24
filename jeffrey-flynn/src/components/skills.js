@@ -76,7 +76,8 @@ const CardTitle = glamorous.div({
 const CardList = glamorous.div({
   width: "100%",
   height: "100%",
-  // border: "1px solid red",
+  // display: "grid",
+  // grid: "20% 20% 20% 20% auto / 100%"
 });
 
 const Item = glamorous.div({
@@ -114,16 +115,39 @@ class Skills extends Component {
                 <Item>LESS</Item>
                 <Item>Media Queries</Item>
                 <Item>WebGL -- Three.js</Item>
-                {/* <Item></Item> */}
               </CardList>
             </SkillCard>
 
             <SkillCard>
               <CardTitle>Back End</CardTitle>
+              <CardList>
+                <Item>Node</Item>
+                <Item>Mongo</Item>
+                <Item>Mongoose</Item>
+                <Item>Passport</Item>
+                <Item>Express</Item>
+                <Item>Algolia</Item>
+                <Item>Django</Item>
+                <Item>mLab</Item>
+                <Item>0Auth</Item>
+                <Item>JWT</Item>
+              </CardList>
             </SkillCard>
 
             <SkillCard>
               <CardTitle>Industry Knowledge</CardTitle>
+              <CardList>
+                <Item>Git</Item>
+                <Item>RESTful API</Item>
+                <Item>HTTP</Item>
+                <Item>Big-O</Item>
+                <Item>Data Structures</Item>
+                <Item>Unit Testing</Item>
+                <Item>Computer Architecture</Item>
+                <Item>Heroku</Item>
+                <Item>Netlify</Item>
+                <Item>Firebase</Item>
+              </CardList>
             </SkillCard>
           </CardContainer>
       </Container>
