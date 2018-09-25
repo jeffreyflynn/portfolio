@@ -5,7 +5,7 @@ const Container = glamorous.div({
   background: "linear-gradient(#1F1F1F, #2D2D2D)",
   // height: `${window.innerHeight}`,
   width: `${window.innerWidth - window.scrollWidth}`,
-  border: "1px solid transparent"
+  // border: "1px solid transparent"
 });
 
 const Header = glamorous.div({
@@ -14,8 +14,8 @@ const Header = glamorous.div({
   fontWeight: 800,
   fontSize: "3.5vw",
   width: "100%",
-  textShadow: "0 0 3px #ffffff",
-  margin: "1%"
+  // textShadow: "0 0 3px #ffffff",
+  padding: "3%"
 });
 
 const SubContainer = glamorous.div({

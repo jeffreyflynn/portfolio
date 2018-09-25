@@ -7,7 +7,7 @@ import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 const Container = glamorous.div({
   // border: "1px solid skyblue",
   background: "linear-gradient(black, #1F1F1F)",
-  height: `${window.innerHeight}`,
+  // height: `${window.innerHeight}`,
   width: `${window.innerWidth - window.scrollWidth}`,
   display: "flex",
   flexDirection: "column",
@@ -21,7 +21,8 @@ const Header = glamorous.div({
   fontSize: "3.5vw",
   width: "100%",
   textShadow: "0 0 3px #ffffff",
-  margin: "1%"
+  margin: "3%",
+  // textAlign: "center"
 });
 
 const Content = glamorous.div({
@@ -33,7 +34,7 @@ const Content = glamorous.div({
   lineHeight: "1.8",
   margin: "0 auto",
   textAlign: "center",
-  marginBottom: "2%"
+  marginBottom: "4%"
 });
 
 const CardContainer = glamorous.div({
@@ -93,9 +94,16 @@ const Item = glamorous.div({
 
 class Skills extends Component {
   render() {
+
+    const frontend = ["React", "Redux", "Context API", "CSS3", "Glamorous", "Styled Components", "AJAX (Axios)", "LESS", "Media Queries", "WebGL (Three.js)"];
+    const backend = ["Node", "Mongo", "Mongoose", "Passport", "Express", "Firestore", "Algolia", "Django", "mLab", "0Auth", "JWT"];
+    const industry = ["JavaScript, Python, C, Go", "Git", "RESTful API", "HTTP", "Big-O", "Data Structures", "Unit Testing", "Computer Architecture", "Heroku", "Netlify", "Firebase"];
+    
     return (
       <Container>
+
           <Header>Skills</Header>
+          
           <Content>
             My persuit of a career in software engineering began in early 2018 when I enrolled in Lambda School.
             
@@ -103,54 +111,26 @@ class Skills extends Component {
 
             The culmination of this desire for knowledge and mastery is listed below.
           </Content>
+
           <CardContainer>
             <SkillCard>
               <CardTitle>Front End</CardTitle>
               <CardList>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />React</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Redux</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Context API</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />CSS3</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Glamorous</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Styled Components</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />AJAX -- Axios</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />LESS</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Media Queries</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />WebGL -- Three.js</Item>
+                {frontend.map((skill, index) => <Item id={index}><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />{skill}</Item>)}
               </CardList>
             </SkillCard>
 
             <SkillCard>
               <CardTitle>Back End</CardTitle>
               <CardList>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Node</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Mongo</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Mongoose</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Passport</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Express</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Firestore</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Algolia</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Django</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />mLab</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />0Auth</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />JWT</Item>
+                {backend.map((skill, index) => <Item id={index}><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />{skill}</Item>)}
               </CardList>
             </SkillCard>
 
             <SkillCard>
               <CardTitle>Industry Knowledge</CardTitle>
               <CardList>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Git</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />RESTful API</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />HTTP</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Big-O</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Data Structures</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Unit Testing</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Computer Architecture</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Heroku</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Netlify</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />Firebase</Item>
-                <Item><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />JavaScript, Python, C, Go</Item>
+                {industry.map((skill, index) => <Item id={index}><FontAwesomeIcon icon={faCheckCircle} color="#73C2FB" style={{margin: "0 2%"}} />{skill}</Item>)}
               </CardList>
             </SkillCard>
           </CardContainer>
