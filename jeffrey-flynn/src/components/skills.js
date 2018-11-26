@@ -5,13 +5,10 @@ import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 
 
 const Container = glamorous.div({
-  // border: "1px solid skyblue",
   background: "linear-gradient(black, #1F1F1F)",
-  // height: `${window.innerHeight}`,
   width: `${window.innerWidth - window.scrollWidth}`,
   display: "flex",
   flexDirection: "column",
-  // grid: "100% / 100%" // 1 row, 1 column
 });
 
 const Header = glamorous.div({
@@ -22,11 +19,9 @@ const Header = glamorous.div({
   width: "100%",
   textShadow: "0 0 3px #ffffff",
   margin: "3%",
-  // textAlign: "center"
 });
 
 const Content = glamorous.div({
-  // border: "1px solid white",
   width: "85%",
   color: "white",
   fontFamily: "Open Sans, sans-serif",
@@ -38,7 +33,6 @@ const Content = glamorous.div({
 });
 
 const CardContainer = glamorous.div({
-  // border: "1px solid white",
   width: "100%",
   height: "100%",
   display: "grid",
@@ -52,7 +46,6 @@ const CardContainer = glamorous.div({
 const SkillCard = glamorous.div({
   width: "100%",
   height: "100%",
-  // border: "1px solid skyblue",
   borderRadius: "5px",
   background: "linear-gradient(#1F1F1F, black)",
   boxShadow: "0 0 5px 1px #ebebeb",
@@ -79,8 +72,6 @@ const CardTitle = glamorous.div({
 const CardList = glamorous.div({
   width: "100%",
   height: "100%",
-  // display: "grid",
-  // grid: "20% 20% 20% 20% auto / 100%"
 });
 
 const Item = glamorous.div({
@@ -89,7 +80,6 @@ const Item = glamorous.div({
   fontFamily: "Open Sans, sans-serif",
   fontSize: "1.5em",
   lineHeight: "1.8",
-  // textAlign: "center",
 });
 
 class Skills extends Component {

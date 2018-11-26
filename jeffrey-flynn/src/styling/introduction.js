@@ -34,7 +34,7 @@ const Title = glamorous.div({
   textShadow: "0 0 1px #E0E0E0, 0 0 5px #92BCDB",
   whiteSpace: "nowrap",
   overflow: "hidden",
-  animation: `${type} 5s steps(60, end)` 
+  // animation: `${type} 5s steps(60, end)` 
 });
 
 const SubTitle = glamorous.div({
